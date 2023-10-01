@@ -6,7 +6,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">--}}
         @yield('styles')
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>{{ config('app.name', 'iofrm') }}</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">

@@ -38,7 +38,7 @@
                         <h3>Get more things done with Loggin platform.</h3>
                         <p>Access to the most powerfull tool in the entire design and web industry.</p>
                         <div class="page-links">
-                            <a href="login1.html" class="active">Login</a><a href="register1.html">Register</a>
+                            <a href="{{ route('login') }}" class="active">Login</a><a href="{{ route('register')}}">Register</a>
                         </div>
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
@@ -61,6 +61,7 @@
 
                             <div class="form-button">
                                 <button id="submit" type="submit" class="ibtn">{{ __('Log in') }}</button>
+
                                 @if (Route::has('password.request'))
                                 <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                     href="{{ route('password.request') }}">
